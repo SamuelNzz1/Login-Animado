@@ -1,0 +1,477 @@
+@font-face {
+    font-family: 'Caracas Demibold';
+    src: url('CaracasDemibold.eot');
+    src: url('CaracasDemibold.eot?#iefix') format('embedded-opentype'),
+    url('CaracasDemibold.woff') format('woff'),
+    url('CaracasDemibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }   
+    @keyframes move-btn{
+        from{
+            transform: translateX(0px);
+            
+        }
+        to{
+            transform: translateX(5px) translateY(-5px);
+            
+            
+        }
+    }
+    @keyframes  animation-initial{
+        from{
+            transform: scale(0)
+        }
+        to{
+            transform: scale(1);
+        }
+
+    }@keyframes hover-socials{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-10px);
+        }
+        100%{
+            transform: translateY(-5px);
+        }
+    }
+    @keyframes color-animation-facebook{
+        from{
+            background-color: rgba(0, 0, 0, 0.1); 
+        }
+        to{
+            background-color: #3b5998;
+
+        }
+
+    }
+    @keyframes color-animation-google{
+        from{
+            background-color: rgba(0, 0, 0, 0.1); 
+        }
+        to{
+            background-color: #de5246;
+
+        }
+
+    }
+    @keyframes color-animation-linkedn{
+        from{
+            background-color: rgba(0, 0, 0, 0.1); 
+        }
+        to{
+            background-color: #0e76a8;
+
+        }
+
+    }
+    @keyframes label-go{
+        from{
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(-30px);
+        }
+
+    }
+    @keyframes label-return {
+        from {
+            transform: translateY(-30px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    @keyframes welcome-move{
+        from{
+            transform: translateX(0px);
+
+
+        }
+        to{
+        
+            transform: translateX(+500px);
+        }
+    }
+    @keyframes text-left-move{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-500px);
+        }
+
+    }
+    @keyframes create-a-count-move-to-left{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-500px);
+        }
+
+
+    }
+    @keyframes sign-in-move-right-to-left{
+        from{
+            transform: translateX(300px);
+
+        }
+        to{
+            transform: translateX(0px);
+
+        }
+    }
+    @keyframes hello-friend-to-right{
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+
+    }
+   
+
+    @keyframes hello-friend-to-left{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-600px);
+        }
+        
+    }
+
+    @keyframes sign-in-move-left-to-right{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(+600px);
+        }
+
+    }
+    @keyframes welcome-move2{
+        from{
+            transform: translateX(300px);
+
+        }
+        to{
+            transform: translateX(0px);
+        }
+
+    }
+    @keyframes create-a-count-move-to-right{
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+
+    }
+    .create-a-count-move2{
+        animation: create-a-count-move-to-right 0.6s forwards;
+
+    }
+    .welcome-back-animation2{
+        animation: welcome-move2 0.6s forwards;
+        
+    }
+
+    .sign-in-move2{
+        animation: sign-in-move-left-to-right 0.6s;
+        animation-delay: 0;
+    }
+
+    .hello-friend-move2{
+        animation: hello-friend-to-left 0.6s;
+        animation-delay: 0;
+    }
+    
+    .hello-friend-move{
+        animation: hello-friend-to-right 0.6s forwards;
+        animation-delay: 0;
+    }
+
+    .sign-in-move{
+        
+        animation: sign-in-move-right-to-left 0.6s forwards;
+        animation-delay: 0;
+    }
+
+
+.create-a-count-move{
+    animation: create-a-count-move-to-left 0.6s ;
+
+}
+    
+    
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;    
+    font-family: 'Caracas Demibold';
+}
+
+.container{
+    display: flex;
+    font-size: 20px;
+    padding: 30px 200px;
+    
+
+}
+.login-card{
+    
+    display: flex;
+    flex-direction: row;
+    height: 30em;
+    width: 50em ;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.login-card-left{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.welcome-back{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff3f35;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius:  0px;
+    align-items: center;
+    overflow: hidden;
+
+    
+}
+
+
+.welcome-back-animation{
+    animation: welcome-move 0.6s  ;
+    
+}
+
+.text-animation{
+    animation: text-left-move 0.6s;
+    
+}
+
+
+
+
+
+.welcome-back h1{
+    margin-top: 12rem;
+}
+.welcome-back p{
+    margin-right: 10px;
+    
+}
+.welcome-back button{
+    margin-top: 30px;
+}
+
+
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius:  0px;
+    background-color: #fff;
+    align-items: center;
+    gap: 20px;
+
+
+    
+}
+.sign-in a{
+    text-decoration: none;
+    font-size: 17px;
+    color:#808080;
+}
+.sign-in h1{
+    margin-top: 80px;
+}
+
+.login-card-right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.create-a-count{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius:  0px;
+    background-color: #fff;
+    align-items: center;
+    gap: 20px;
+
+
+
+
+    
+}
+
+.cards-links-social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.icon{
+    width: 50px;
+    color: #000;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    
+}
+.create-a-count h1{
+    margin-top: 100px;
+}
+.inputs-create-a-count{
+    display: flex; 
+    flex-direction: column;
+    gap: 30px;
+}
+.inputs{
+    border-radius: 5px;
+    width: 320px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+.label-inputs{
+    color: #808080;
+    font-size: 15px;
+}
+.input-label{
+    position: relative;
+}
+label{
+    position: absolute;
+    top: 13px;
+    left: 0;
+    margin-left: 15px;
+}
+.inputs:focus ~ label, .inputs:not(:placeholder-shown) ~label {  /*está parte com o ~ está sempre se referindo a uma ação que a LABEL vai fazer*/
+    animation: label-go 0.5s forwards;
+
+}
+.inputs:not(:focus) ~label{
+    animation: label-return 0.5s forwards;
+}
+.label-animation{
+    animation: label-go 0.5s forwards;
+
+}
+.label-return-animation{
+    animation: label-return 0.5s forwards;
+
+}
+.hello-friend{
+    display: flex;
+    flex-direction: column;
+    background-color:#ff4455;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius:  0px;
+    align-items: center;
+    gap: 30px;
+
+
+    
+}
+.hello-friend h1{
+    margin-top: 35%;
+}
+
+
+
+.font-white{
+    color: #fff;
+}
+.font-black{
+    color: #000;
+}
+.p-red{
+    opacity: 0.9;
+    font-size: 17px;
+    
+}
+.p-white{
+   
+    font-size: 17px;
+    color:#808080;
+}
+
+
+.icon-tabler-brand-facebook-filled:hover{
+    animation: color-animation-facebook 1.2s forwards;
+
+}
+.icon-tabler-brand-google:hover{
+    animation: color-animation-google 1.2s forwards;
+
+}
+.icon-tabler-brand-linkedin:hover{
+    animation: color-animation-linkedn 1.2s forwards;
+
+}
+.btn-sign-in:hover, .btn-sign-up:hover{
+    animation: move-btn 0.5s forwards;
+ }
+ 
+.btn-socials:hover{
+    animation: hover-socials 1s  linear forwards;
+}
+
+body{
+    animation: animation-initial 1s ;
+    
+}
+
+.btn-sign-in{
+    border-radius: 100px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    padding: 0.9rem 4rem;
+
+}
+
+.btn-sign-up{
+    border-radius: 100px;
+    border: 1px;
+    background-color: #ff3f35;
+    color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    padding: 0.9rem 4rem;
+
+}
+.display-none{
+    display:none;
+}
