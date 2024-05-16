@@ -27,5 +27,6 @@ Para visualizar e trabalhar com o projeto localmente, siga os passos abaixo:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seuUsuario/animated-login-screen.git
-   cd animated-login-screen
+   git clone https://github.com/SamuelNzz1/Login-Animado.git
+   cd Login-Animado
+   
